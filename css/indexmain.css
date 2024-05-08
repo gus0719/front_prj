@@ -1,0 +1,21 @@
+/*메인 영역========================*/
+#wrapper{
+    position : absolute;
+    top : 0;
+    width : 1080px;
+    height : auto;
+    margin : auto;
+}
+main{
+    height : auto;
+    margin-top : 30px;
+}
+article{
+    padding-top : 5px;
+}
+
+/*섹션 하단 내부간격*/
+section{
+    float : none;
+    padding-bottom : 650px;
+}

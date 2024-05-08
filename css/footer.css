@@ -1,0 +1,67 @@
+footer{
+    position : relative;
+    width : 100%;
+    bottom : 0;
+    height : 100px;
+    border-top : 3px solid black;
+}
+footer > #footBox{
+    box-sizing: border-box;
+    width : 1080px;
+    height : 100%;
+    margin : auto;
+}
+a{
+    color : black;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+footer > nav{
+    position : relative;
+    top : 0px;
+    width : 1080px;
+    min-width : 1080px;
+    height : 30px;
+    margin : auto;
+}
+
+#footerNavi li{
+    float : left;
+    margin-right : 50px;
+    border-right : 1px solid black;
+    padding-right : 50px;
+}
+
+#footerNavi li a:hover{
+    color : red;
+}
+#footerNavi li:first-child{
+    margin-left : 200px;
+}
+#footerNavi li:last-child{
+    border-right : none;
+}
+
+#bottomRight{
+    position : relative;
+    top : 200px;
+    text-align: right;
+}
+#bottomLeft, #bottomRight{
+    float : left;
+    box-sizing: border-box;
+    width : 530px;
+    height : 100%;
+}
+.footTitle{
+    font-size : 20px;
+}
+#bottomRight > b{
+    margin-top : 400px;
+}
+.footTitle{
+    float: none;
+    font-size: 18px;
+}

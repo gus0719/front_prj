@@ -1,0 +1,54 @@
+#advertise{
+    box-sizing: border-box;
+    display: inline-block;
+    width : 80%;
+    position : relative;
+    margin-top : -40px;
+    height : 400px;
+    border : 2px solid black;
+}
+#advertise img{
+    box-sizing: border-box;
+    width : 100%;
+    height : 100%;
+}
+
+#prev, #next{
+    position : absolute;
+    top : 180px;
+    color : #dddddd;
+    font-size : 36px;
+    user-select: none;
+    transition : 0.6s ease;
+    opacity: .4;
+}
+#prev:hover, #next:hover{
+    cursor: pointer;
+    color : rgb(138, 4, 248);
+    opacity: 1;
+}
+#prev{
+    left : 0;
+}
+#next{
+    right : 0;
+}
+
+#dots{
+    position : absolute;
+    bottom : 8px;
+    right : 100px;
+    z-index: 1;
+}
+.dot{
+    display: inline-block;
+    width : 15px;
+    height : 15px;
+    background-color : #aaaaaa;
+    border-radius: 50%;
+    transition : 0.6s ease;
+    cursor: pointer;
+}
+.dot:hover{
+    background-color : #8a2be2;
+}

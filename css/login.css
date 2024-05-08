@@ -1,0 +1,120 @@
+/*랩핑*/
+#wrapper{
+    display: block;
+	margin: 100px auto;
+	width: 700px;
+	height : 600px;
+	font-size: 15px;
+}
+#logo{
+    display : flex;
+    margin : auto;
+    width : 250px;
+    height : 200px;
+    margin-top : 100px;
+    cursor: pointer;
+    margin-bottom : 70px;
+}
+
+/*ID, PWD 입력창*/
+#login{
+    display: block;
+    box-sizing: border-box;
+    width : 722px;
+    height : 130px;
+}
+/*입력창 랩핑*/
+#inputRegion{
+    box-sizing: content-box;
+    width: 420px;
+    display: block;
+    float: left;
+}
+/*인풋 그룹*/
+.textfield{
+    box-sizing: border-box;    
+    border-radius: 10px;
+    padding-left : 10px;
+    border-width: 1px;
+    width : 400px;
+    height : 60px;
+    outline: none;
+}
+.textfield img{
+    display: inline-block;
+    box-sizing: border-box;
+    width : 40px;
+    height : 40px;
+    vertical-align: middle;
+    border-right: 2px solid black;
+}
+/*인풋 보더 제거*/
+.inText{
+    box-sizing: border-box;
+    position : relative;
+    top : -40px;
+    left : 40px;
+    border : none;
+    outline: none;
+    width : 340px;
+    height : 50px;
+    font-size: 18px;
+}
+
+/*로그인버튼 가로로 정렬*/
+#loginBtn{
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    width : 250px;
+    height : 60px;
+    border: 1px solid black;
+    background-color: black;
+    color : white;
+    font-size: 24px;
+    border-radius: 10px;
+}
+#loginBtn:hover{
+    background-color : #303030;
+}
+/*소셜로그인 버튼*/
+#login > img{
+    cursor: pointer;
+    width : 60px;
+    height : 60px;
+    margin-left: 13px;
+}
+#login > img:hover{
+    opacity: 0.8;
+}
+
+/*로그인 하단 네비게이션*/
+#loginBottom{
+    border-top : 2px solid black;
+    margin-top : 20px;
+    padding-top : 20px;
+    width : 700px;
+    height : 60px;
+}
+#loginChk{
+    margin-left: 30px;
+    font-size: 18px;
+    border-right: 2px solid black;
+    padding-right : 30px;
+}
+/*아이디찾기, 비밀번호찾기, 회원가입 속성*/
+.findInfo{
+    font-size: 18px;
+    border-right: 2px solid black;
+    margin-left : 30px;
+    padding-right : 30px;
+}
+.findInfo:last-child{
+    border : none;
+}
+.findInfo:hover{
+    color : red;
+    text-decoration: underline;
+}

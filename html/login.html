@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로그인</title>
+    <link rel="stylesheet" href="./../css/login.css">
+    <link rel = "stylesheet" href = "./../css/footer.css">
+    <script src = "./../js/footer.js"></script>
+    
+    <script src = "./../js/login.js"></script>
+
+    <script>// 로그인 리팩토링 2024-04-22 (월) -> 남상현</script>
+</head>
+<body onload = "footLoad(), userInit()">
+    <div id="wrapper">
+        <img id = "logo" src = "./../img/headerImg/logo.png" onclick = "location.href = './../index.html'">
+        <form>
+            <div id = "login">
+                <div id = "inputRegion">
+                    <fieldset class = "textfield">
+                        <label for = "id">
+                        <img src = "./../img/login/id.gif"></label>
+                        <input type = "text" id = "id" class = "inText" placeholder = "아이디 입력">
+                    </fieldset>
+                    <fieldset class = "textfield">
+                        <label for = "pwd">
+                        <img src = "./../img/login/password.gif"></label>
+                        <input type = "password" id = "pwd" class = "inText" placeholder = "비밀번호 입력">
+                    </fieldset>
+                </div>
+                <div id = "loginBtn" onclick = "login()">로그인</div>
+                <img src = "./../img/login/google.png">
+                <img src = "./../img/login/naver.png">
+                <img src = "./../img/login/kakao.png">
+            </div>
+            <div id = "loginBottom">
+                <label for = "autoLogin" id = "loginChk">
+                <input type = "checkbox" id = "autoLogin">자동 로그인</label>
+                <a href = "" class = "findInfo">아이디 찾기</a>
+                <a href = "" class = "findInfo">비밀번호 찾기</a>
+                <a href = "./signUp.html" class = "findInfo">회원가입</a>
+            </div>
+        </form>
+    </div>
+    <footer id = "footRegion"></footer>
+</body>
+</html>

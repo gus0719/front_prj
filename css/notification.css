@@ -1,0 +1,24 @@
+#wrapper li{
+    font-size:20px;
+    font-weight: bold; 
+    list-style: none;    
+}
+
+#wrapper ul{
+    padding:0;
+}
+
+#wrapper hr{
+    width:700px;
+    margin-left: 0;
+}
+
+.licc{
+    width:auto;
+    height:30px;
+    margin-left: 10px;
+}
+
+#wrapper li.licc a{
+    cursor: pointer;
+}

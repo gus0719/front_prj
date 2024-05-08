@@ -1,0 +1,131 @@
+#wrapper{
+    position : relative;
+    top : 100px;
+}
+#back{
+    cursor : pointer;
+    font-size : 24px;
+    font-weight : bold;
+}
+/*=========================*/
+.itemtopinfowrap{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+    margin-top: 20px;
+}
+.prodpicture{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    
+    margin-left : 50px;
+    margin-right: 50px;
+    font-size: 0;    
+    float:left;
+    border : 1px solid black;
+}
+.prodpicture > img{
+    width : 300px;
+    height : 300px;
+}
+
+/*============================*/
+.itemtopinfo{
+    margin-left : 100px;
+    width:550px;
+    height:450px;
+    float:left;
+    position:relative;
+    background-color : #f3f2f2;
+    border-radius: 30px;
+}
+
+.iteminfo{
+    box-sizing: border-box;
+    margin-left : 50px;
+    width: 1000px;
+    height: 450px;
+}
+
+.iteminfo img{
+    width:540px;
+    height:450px;
+}
+
+.boxitemtitle{
+    position:relative;
+}
+/*=============================*/
+#subExplain{
+    margin-top : 20px;
+}
+
+/*=============================*/
+#btns{
+    display: inline-block;
+    position : relative;
+    top : 50px;
+    width : 100%;
+    height : 50px;
+}
+
+#btns > button{
+    margin-right : 30px;
+    width : 220px;
+    border-radius: 10px;
+    height : 50px;
+    background-color : black;
+    color : white;
+    font-size : 20px;
+    font-weight: bold;
+    float : right;
+}
+#btns > button:hover{
+    background-color : #252525;
+}
+/*=============================*/
+.productname{
+    font-size: 26px;
+    margin:0 0 16px;
+}
+
+.from{
+    width:550px;
+    color:gray;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.price{
+    color: red;
+    font-size:30px;
+    font-weight: bold;
+}
+
+
+#expTitle{
+    margin-top : 10px;
+    padding-left: 50px;
+    float : none;
+    width : 950px;
+    height : 50px;
+    font-size : 28px;
+    font-weight: bold;
+    color : #4B0082;
+    border-bottom : 1px solid black;
+}
+.pictureinfo{
+    margin-left : 50px;
+    width: 1000px;
+    height:auto;
+    border: 1px solid black;
+    margin-bottom : 500px;
+}
+
+.pictureinfo img{
+    margin-top : -27px;
+    width:1000px;
+    height:50%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>상품 구매창</title>
+    <link rel = "stylesheet" href = "./../css/footer.css">
+    <link rel = "stylesheet" href = "./../css/buyProduct.css">
+
+    <script src = "./../js/buyProduct.js"></script>
+    <script src = "./../js/footer.js"></script>
+    <script src = "./../js/discount.js"></script>
+</head>
+<body onload = "footLoad(), buyItemPage(), init(), useCoupon(0)">
+    <header>
+        <a id = "logo" href = "./../index.html"><img src = "./../img/headerImg/logoex02.png"></a>
+    </header>
+    <div id = "wrapper">
+        <form>
+            <div id = "pdInfo">
+                <!--
+                <p class = "super">상품 정보</p>
+                <div id = "left"><img src = ""></div>
+                <div id = "right">
+                    <p id = "pdName"></p>
+                    <p id = "price"></p>
+                </div>-->
+            </div>
+            <div id = "delivery">
+                <div class = "deliveryLayer">
+                    <p class = "deliveryTitle">배송 시 요청사항</p>
+                    <select name = "requestOption" id = "option">
+                        <option value = "1">1. 배송 전 연락 바랍니다.</option>
+                        <option value = "2">2. 문 앞에 놓아주세요.</option>
+                        <option value = "3">3. 경비실에 맡겨주세요.</option>
+                        <option value = "4">4. 직접 수령하겠습니다.</option>
+                    </select>
+                </div>
+                <div class = "deliveryLayer">
+                    <p class = "deliveryTitle">주소</p>
+                    <select name = "local" id = "local">
+                        <option value = "서울시">서울시</option>
+                        <option value = "경기도">경기도</option>
+                        <option value = "강원도">강원도</option>
+                        <option value = "충청도">충청도</option>
+                        <option value = "경상도">경상도</option>
+                        <option value = "전라도">전라도</option>
+                        <option value = "부산시">부산시</option>
+                        <option value = "제주도">제주도</option>
+                    </select>
+                </div>
+                <div class = "deliveryLayer">
+                    <p class = "deliveryTitle">상세 주소</p>
+                    <input type = "text" id = "addr" placeholder = "OO구(군, 읍)  OO로(면,리)">
+                </div>
+                <div class = "deliveryLayer">
+                    <p class = "deliveryTitle">구매 수단</p>
+                    <select name = "payment" id = "payment">
+                        <option value = "현금">현금</option>
+                        <option value = "카드">카드</option>
+                        <option value = "무통장 입금">무통장 입금</option>
+                        <option value = "계좌이체">계좌이체</option>
+                    </select>
+                </div>
+                <div class = "deliveryLayer">
+                    <p class = "deliveryTitle">쿠폰 적용</p>
+                    <select name = "coupon" id = "coupon" onchange = "useCoupon(this.value)">
+                        <option value = "0" selected>쿠폰 적용 안함</option>
+                        <option value = "0.1">10% 할인 쿠폰</option>
+                        <option value = "0.3">30% 할인 쿠폰</option>
+                        <option value = "0.5">50% 할인 쿠폰</option>
+                    </select>
+                </div>
+                <div class = "deliveryLayer">
+                    <p class = "deliveryTitle">최종 금액</p>
+                    <input type = "text" id = "finalPay" name = "finalPay" readonly>
+                </div>
+            </div>
+            <div id = "btns">
+                <button type = "button" class = "btn">주문하기</button>
+                <button type = "button" class = "btn" onclick = "history.back()">취소</button>
+                                                                <!-- └> 이전 페이지로 이동 -->
+            </div>
+        </form>
+    </div>
+    <footer id = "footRegion"></footer>
+</body>
+</html>

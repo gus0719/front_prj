@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> 회원가입 </title>
+    <link rel="stylesheet" href="./../css/signup.css">
+    <script src = "./../js/register.js"></script>
+    <script>// 회원가입 리팩토링 2024-04-22 (월) -> 서준혁</script>
+</head>
+<body>
+    <div id="wrapper">
+        <a href="./../index.html">
+            <img src="./../img/headerImg/logo.png" class="logo">                
+        </a>        
+        <p><b>회원정보를 입력해주세요</b></p>   
+        <input type="text" class="textfiled" placeholder="ID">
+        <input type="password" class="textfiled" placeholder="비밀번호">
+        <input type="password" class="textfiled" placeholder="비밀번호 재입력">
+        <input type="email" class="textfiled" placeholder="이메일을 입력하세요">
+        <input type="text" class="textfiled" placeholder="이름">
+        <input type="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" class="textfiled"
+                placeholder="휴대폰 번호(- 포함)">
+        <input type="button" class="inbutton" value="인증번호 받기">
+        <input type="number" class="textfiled" placeholder="인증번호 입력">
+        <input type="button" class="inbutton" value="인증번호 확인">
+
+        <div class="box">
+            <br>
+            <label for="c1"><input type="checkbox" id="c1"> [필수] 만14세이상입니다</label><br><br>
+            <label for="c2"><input type="checkbox" id="c2"> [필수] 플렉스몰 이용약관 동의</label><br><br>
+            <label for="c3"><input type="checkbox" id="c3"> [필수] 전자금융거래 이용약관 동의</label><br><br>
+            <label for="c4"><input type="checkbox" id="c4"> [필수] 개인정보 수집 및 이용 동의</label><br><br>
+            <label for="c5"><input type="checkbox" id="c5"> [필수] 개인정보 제3자 제공 동의</label><br><br>
+            <label for="c6"><input type="checkbox" id="c6"> [선택] 마케팅 목적의 개인정보 수집 및 이용 동의</label><br><br>
+            <label for="c7"><input type="checkbox" id="c7"> [선택] 광고성 정보수신 동의</label><br><br>
+        </div>
+        <div class="agree">
+            <input type="button" class="subbutton" value="동의하고 가입하기" onclick = "signUp()">
+        </div>
+        <div class="ending">            
+            <p>©Shople Corp. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

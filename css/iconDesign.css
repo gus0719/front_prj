@@ -1,0 +1,17 @@
+.material-symbols-outlined {
+    cursor : pointer;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+#searchTab{
+    border-right : 2px solid black;
+}
+#searchTab, #clearBtn, #searchBtn{
+    font-size : 32px;
+}
+#clearBtn:hover, #searchBtn:hover{
+    color : red;
+}

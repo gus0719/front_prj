@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>SHOPLE</title>
+    <link rel = "stylesheet" href = "./css/header.css">
+    <link rel = "stylesheet" href = "./css/indexmain.css">
+    <link rel = "stylesheet" href = "./css/footer.css">
+    <link rel = "stylesheet" href = "./css/productList.css">
+    <link rel = "stylesheet" href = "./css/sideCF.css">
+    <link rel = "stylesheet" href = "./css/productEx.css">
+    <link rel = "stylesheet" href = "./css/indexHeader.css">
+    <link rel = "stylesheet" href = "./css/iconDesign.css">
+    <link rel = "stylesheet" href = "./css/mainCF.css">
+    <link rel = "stylesheet" 
+    href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <script src = "./js/funiture.js"></script>
+    <script src = "./js/food.js"></script>
+    <script src = "./js/digital.js"></script>
+    <script src = "./js/fashion.js"></script>
+    <script src = "./js/life.js"></script>
+
+    <script src = "./js/advertise.js"></script>
+
+    <script src = "./js/header.js"></script>
+    <script src = "./js/footer.js"></script>
+</head>
+<body onload = "tokenLoad(true), headLoadForIndex(), footLoadForIndex(), cfInit(), headInit()"
+onresize = "sideCFShow()" onscroll="scrollCF(), headScrolling()">
+    <form>
+        <header id = "headRegion"></header>
+        <nav></nav>
+        <div id = "sideCF">Advertisement<hr>
+            <div class = "advertisement">
+                <a href = "#"><img src = "./img/advertise/cf1.jpg"></a>
+            </div>
+            <div class = "advertisement">
+                <a href = "#"><img src = "./img/advertise/cf2.png"></a>
+            </div>
+            <div class = "advertisement">
+                <a href = "#"><img src = "./img/advertise/cf3.png"></a>
+            </div>
+        </div>
+        <div id = "firstHead">
+            <img id = "mainLogo" src = "./img/headerImg/logoex02.png">
+            <nav id = "fHeadNavi">
+                <label for = 'searchBar1'>
+                <fieldset>
+                    <span id = "searchTab" class = "material-symbols-outlined">shopping_bag</span>
+                    <input type = 'text' class = 'search' id = 'searchBar1' name = 'query'>
+                    <span id = "clearBtn" class = "material-symbols-outlined" onclick = 'textclear(searchBar1)'>close</span>
+                    <span id = "searchBtn" class = "material-symbols-outlined">search</span>
+                </fieldset></label>
+                <a>도움<span class = "material-symbols-outlined">help</span></a>
+                <a href = "./html/login.html">Login<span class = "material-symbols-outlined">login</span></a>
+            </nav>
+            <div id = "fHeadLeft">
+                <ul id = "fHeadList">
+                    <li class = "leftLists"><span onclick = "funitureListShow(true)">가구</span>
+                        <ul class = "subLists">
+                            <li class = "leftLists"><span onclick = 'sopaListShow(true)'>소파</span></li>
+                            <li class = "leftLists"><span onclick = 'bedListShow(true)'>침대</span></li>
+                            <li class = "leftLists"><span onclick = 'drawerListShow(true)'>수납장</span></li>
+                            <li class = "leftLists"><span onclick = 'deskListShow(true)'>책상</span></li>
+                            <li class = "leftLists"><span onclick = 'chairListShow(true)'>의자</span></li>
+                        </ul>
+                    </li>
+                    <li class = "leftLists"><span onclick = "foodListShow(true)">식품</span>
+                        <ul class = "subLists">
+                            <li class = "leftLists"><span onclick = 'mealKitListShow(true)'>밀키트</span></li>
+                            <li class = "leftLists"><span onclick = 'snackListShow(true)'>간식</span></li>
+                            <li class = "leftLists"><span onclick = 'freshListShow(true)'>농산물</span></li>
+                            <li class = "leftLists"><span onclick = 'seafoodListShow(true)'>수산물</span></li>
+                            <li class = "leftLists"><span onclick = 'noodleListShow(true)'>면</span></li>
+                        </ul>
+                    </li>
+                    <li class = "leftLists"><span onclick = "digitalListShow(true)">가전디지털</span>
+                        <ul class = "subLists">
+                            <li class = "leftLists"><span onclick = 'tvListShow(true)'>TV</span></li>
+                            <li class = "leftLists"><span onclick = 'refrigListShow(true)'>냉장고</span></li>
+                            <li class = "leftLists"><span onclick = 'laptopListShow(true)'>노트북</span></li>
+                            <li class = "leftLists"><span onclick = 'desktopListShow(true)'>데스크톱</span></li>
+                            <li class = "leftLists"><span onclick = 'periListShow(true)'>컴퓨터 주변기기</span></li>
+                        </ul>
+                    </li>
+                    <li class = "leftLists"><span onclick = "fashionListShow(true)">패션</span>
+                        <ul class = "subLists">
+                            <li class = "leftLists"><span onclick = 'shoeListShow(true)'>신발</span></li>
+                            <li class = "leftLists"><span onclick = 'topListShow(true)'>상의</span></li>
+                            <li class = "leftLists"><span onclick = 'bottomListShow(true)'>하의</span></li>
+                            <li class = "leftLists"><span onclick = 'capListShow(true)'>모자</span></li>
+                            <li class = "leftLists"><span onclick = 'bagListShow(true)'>가방</span></li>
+                        </ul>
+                    </li>
+                    <li class = "leftLists"><span onclick = "lifeListShow(true)">생활용품</span>
+                        <ul class = "subLists">
+                            <li class = "leftLists"><span onclick = 'mouthListShow(true)'>구강용품</span></li>
+                            <li class = "leftLists"><span onclick = 'faceListShow(true)'>세면용품</span></li>
+                            <li class = "leftLists"><span onclick = 'towelListShow(true)'>수건</span></li>
+                            <li class = "leftLists"><span onclick = 'kitchenListShow(true)'>주방용품</span></li>
+                            <li class = "leftLists"><span onclick = 'cleanerListShow(true)'>청소용품</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id = "advertise">
+                <img src = "">
+                <span id = "prev" onclick = "prevBtn()">◀</span>
+                <span id = "next" onclick = "nextBtn()">▶</span>
+                <div id = "dots">
+                    <span class = "dot" onclick = "chooseIndex(1)"></span>
+                    <span class = "dot" onclick = "chooseIndex(2)"></span>
+                    <span class = "dot" onclick = "chooseIndex(3)"></span>
+                    <span class = "dot" onclick = "chooseIndex(4)"></span>
+                    <span class = "dot" onclick = "chooseIndex(5)"></span>
+                </div>
+            </div>
+        </div>
+        <div id = "wrapper">
+            <main>
+                <section>
+                    <p class = "title">관심 상품</p>
+                    <ul class = "pdList">
+                        <li class = "product" onclick = "mealKitItem(0, true)">
+                            <div>
+                                <img src = "./img/food/mealkit/busan.png">
+                                <p class = "title">홈스토랑 부산식 물떡 꼬치 어묵탕 냉동<br>
+                                <small class = "price">14,390원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "deskItem(4, true)">
+                            <div>
+                                <img src = "./img/funiture/desk/desk5_lunalab.jpg">
+                                <p class = "title">루나랩 높이조절 스탠딩 책상<br>
+                                <small class = "price">145,000원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "faceItem(0, true)">
+                            <div>
+                                <img src = "./img/life/face/face1_doctorG.png">
+                                <p class = "title">닥터지 약산성 레드 블레미쉬 클리어 수딩 폼<br>
+                                <small class = "price">19,360원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "mealKitItem(3, true)">
+                            <div>
+                                <img src = "./img/food/mealkit/jjukkumebokk.jpg">
+                                <p class = "title">불타는 쭈꾸미 볶음 400g<br>
+                                <small class = "price">14,900원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "freshItem(3, true)">
+                            <div>
+                                <img src = "./img/food/fresh/fruit/sb1.png">
+                                <p class = "title">하동 프리미엄 설향 딸기 500g 4팩 총2kg 딸기선물세트<br>
+                                <small class = "price">45,900원</small></p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <p class = "title">트렌드</p>
+                    <ul class = "pdList">
+                        <li class = "product" onclick = "shoeItem(2, true)">
+                            <div>
+                                <img src = "./img/fashion/shoe/balenciaga/balen1.jpg">
+                                <p class = "title">남성 SPEED RECYCLED 니트 트레이너 블랙<br>
+                                <small class = "price">1,150,000원</small></p>
+                            </div>
+                        </li>                       
+                        <li class = "product" onclick = "topItem(0, true)">
+                            <div>
+                                <img src = "./img/fashion/top/ami/ami1.jpg">
+                                <p class = "title">Red Ami De Coeur Shirt - Grey<br>
+                                <small class = "price">575,000원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "bottomItem(1, true)">
+                            <div>
+                                <img src = "./img/fashion/bottom/ck/ck2.jpg">
+                                <p class = "title">남성 90's 루즈핏 라이트블루 데님<br>
+                                <small class = "price">249,000원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "bagItem(4, true)">
+                            <div>
+                                <img src = "./img/fashion/bag/northface/nf1.jpg">
+                                <p class = "title">BOREALIS II<br>
+                                <small class = "price">149,000원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "capItem(0, true)">
+                            <div>
+                                <img src = "./img/fashion/cap/bbr/bbr2.jpg">
+                                <p class = "title">버버리 STRIPE 캡모자<br>
+                                <small class = "price">380,000원</small></p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <p class = "title">추천 상품</p>
+                    <ul class = "pdList">
+                        <li class = "product" onclick = "chairItem(3, true)">
+                            <div>
+                                <img src = "./img/funiture/chair/chair4_xenics.jpg">
+                                <p class = "title">제닉스 ARENA ZERO BLACK 게이밍 의자<br>
+                                <small class = "price">179,000원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "bagItem(7, true)">
+                            <div>
+                                <img src = "./img/fashion/bag/samsonite/ss2.jpg">
+                                <p class = "title">BALVENIE 발베니<br>
+                                <small class = "price">399,000원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "bottomItem(3, true)">
+                            <div>
+                                <img src = "./img/fashion/bottom/dynafit/dyb2.jpg">
+                                <p class = "title">오라클 남성 하프 팬츠<br>
+                                <small class = "price">99,000원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "noodleItem(3, true)">                            
+                            <div>
+                                <img src = "./img/food/noodle/ramyun/nuguri.png">
+                                <p class = "title">농심 신라면 20개 + 얼큰너구리 20개<br>
+                                <small class = "price">45,960원</small></p>
+                            </div>
+                        </li>
+                        <li class = "product" onclick = "seafoodItem(7, true)">
+                            <div>
+                                <img src = "./img/food/seafood/sashimi/salmon.jpg">
+                                <p class = "title">은하수산 숙성한 연어회 120g<br>
+                                <small class = "price">13,900원</small></p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </form>
+    </div>
+    <footer id = "footRegion"></footer>
+</body>
+</html>
